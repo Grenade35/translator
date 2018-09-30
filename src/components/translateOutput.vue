@@ -1,5 +1,5 @@
 <template>
-	<div id="translateOutput">
+	<div id="translateOutput" class="transOutput">
 		{{ translatedText }}
 	</div>
 </template>
@@ -14,3 +14,8 @@
 
 </script>
 
+<style>
+	.transOutput{
+		font-size: 20px
+	}
+</style>

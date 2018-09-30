@@ -1,7 +1,8 @@
 <template>
 	<div class="row" id="translateForm">
-		<div class="col-md-6 col-md-offset-3">
+		<div class="col-md-4 col-md-offset-4 main-div">
 			<form id="transForm" class="well form-inline" v-on:submit="submitForm">
+
 				<input class="form-control" type="text" placeholder="请输入翻译内容" v-model="translateText">
 				<select class="form-control" v-model="code">
 					<option value="zh">Chinese</option>
@@ -42,5 +43,9 @@
 	#transForm{
 		border: 1px #ccc solid;
 		border-radius: 10px
+	}
+
+	.main-div{
+		margin: 0 auto;
 	}
 </style>
